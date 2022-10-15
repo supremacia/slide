@@ -1,4 +1,6 @@
-
+/*
+    Bill Rocha - https://billrocha.com
+*/
 function SlideShow(cfg) {
     let index = 0,
         total,
@@ -67,10 +69,11 @@ function SlideShow(cfg) {
     init()
 }
 
-window.onload = () => {
-    SlideShow(CFG)
-}
+window.onload = () => SlideShow(CFG)
 
+/* Configuration data
+    ✔ This data can be loaded, for example, from a JSON file or via AJAX, from the server.
+*/
 const CFG = [
     {
         img: '../assets/img/background-start-calltoaction-01-min.png',
@@ -85,5 +88,4 @@ const CFG = [
         img: '../assets/img/background-start-calltoaction-04-min.png',
         cap: 'Você pode investir na tecnologia FreedomeE e se tornar DONO do seu banco e da sua rede de comunicação e comércio e ter qualidade de vida.<a href="https://freedomee.com">Freedomee.com</a>'
     },
-
 ]

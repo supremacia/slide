@@ -1,5 +1,7 @@
-
-const SlideShow = new function () {
+/*
+    Bill Rocha - https://billrocha.com
+*/
+function SlideShow() {
     let index = 0,
         total,
         stop = false,
@@ -43,14 +45,10 @@ const SlideShow = new function () {
         dots[n].classList.add('on')
     }
 
-    return {
-        init
-    }
+    const __ = e => document.querySelector(e)
+    const _a = e => document.querySelectorAll(e)
+
+    init()
 }
 
-window.onload = () => {
-    SlideShow.init()
-}
-
-const __ = e => document.querySelector(e)
-const _a = e => document.querySelectorAll(e)
+window.onload = () => SlideShow()
